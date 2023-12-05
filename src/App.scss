@@ -153,6 +153,7 @@
       .cart-card-wrapper {
         display: flex;
         align-items: center;
+        justify-content: space-evenly;
         gap: 2rem;
         box-shadow: 0 0 10px 1px rgb(187, 187, 187);
         border-radius: 10px;
