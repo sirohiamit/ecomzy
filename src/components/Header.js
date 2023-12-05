@@ -5,11 +5,14 @@ import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
-  const cart_value = useSelector((state)=> state.cart.length);
+  const cart_value = useSelector((state) => state.cart.length);
   const navigate = useNavigate();
   return (
     <div className="header-wrapper d-flex justify-content-between">
-      <div className="logo d-flex align-items-center"  onClick={()=> navigate('/')}>
+      <div
+        className="logo d-flex align-items-center"
+        onClick={() => navigate("/")}
+      >
         <div>
           <HiShoppingBag size={35} color="white" />
         </div>
@@ -17,6 +20,7 @@ function Header() {
       </div>
 
       <div className="cart-icon d-flex align-items-center">
+        <Link to="/" className="nav-item">Home</Link>
         <Link to="/cart">
           <IoCartOutline className="icon" size={35} color="white" />
           <div className="cart_value">{cart_value}</div>

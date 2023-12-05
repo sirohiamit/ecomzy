@@ -29,6 +29,13 @@
     .cart-icon {
       position: relative;
       cursor: pointer;
+      display: flex;
+      gap: 2rem;
+
+      .nav-item {
+        text-decoration: none;
+        color: white;
+      }
 
       .icon {
         z-index: 1;
@@ -142,6 +149,12 @@
     padding: 3rem 0;
     display: flex;
     gap: 2rem;
+    width: 75%;
+    margin: auto;
+
+    @include sm {
+      width: 88%;
+    }
 
     @include sm {
       flex-direction: column-reverse;
