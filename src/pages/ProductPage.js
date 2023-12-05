@@ -23,6 +23,7 @@ function ProductPage() {
 
   useEffect(() => {
     response();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
