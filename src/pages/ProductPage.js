@@ -27,7 +27,7 @@ function ProductPage() {
   }, [])
 
   return (
-    <div className='product-wrapper w-75 m-auto'>
+    <div className='product-wrapper'>
       {apiResponse.map((res) => {
         return <Card res={res} key={res.id} />
       })}
@@ -35,4 +35,4 @@ function ProductPage() {
   )
 }
 
-export default ProductPage
+export default ProductPage;

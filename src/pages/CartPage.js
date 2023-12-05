@@ -10,7 +10,7 @@ function CartPage() {
   return (
     <>
       {cartItems.length > 0 ? (
-        <div className='cart_wrapper'>
+        <div className='cart_wrapper w-75 m-auto'>
           <div className='cart-cards'>
             {cartItems?.map((value) => {
               return <CartCard key={value.id} value={value} />
