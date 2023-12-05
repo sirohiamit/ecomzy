@@ -73,6 +73,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.2rem;
+    width: 75%;
+    margin: auto;
+
+    @include sm {
+      width: 88%;
+    }
+    
 
     .card-wrapper {
       box-shadow: 0 0 5px 0 #c9c7c7;
